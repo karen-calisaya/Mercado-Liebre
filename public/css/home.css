@@ -14,15 +14,12 @@
         --prices : 18px;
         --discounts-descriptions : 16px;
     }
-
-    /* +++++++++++++++++++ */
     /* ESTILOS GENERALES */
-    /* +++++++++++++++++++ */
 
     * {
         margin: 0;
         padding: 0;
-        /* box-sizing: border-box; */
+        box-sizing: border-box;
     }
     
 a {
@@ -46,8 +43,8 @@ li {
 header {
     background-color: var(--color-amarillo);
     font-size: var(--paragraph);
-    padding-bottom: 10px;
-    padding-top: 30px;
+    padding-bottom: 5px;
+    padding-top: 15px;
 }
 
 header .burger-menu {
@@ -63,7 +60,8 @@ header .burger-menu {
 
 header img#logo {
     width: 130px;
-    margin-left: 25px;
+    margin: 0 20px;
+    
 }
 
 header nav{
@@ -89,14 +87,26 @@ header nav .menu-top {
 main div img {
     width: 100%;
 }
+h3.subtitulo{ 
+    text-align: left;
+    color: var(--color-grisOscuro);
+    padding: 10px;
+}
+
 main section article{
     margin: 10px;
     border: 10px solid #ebebeb;
     padding: 15px;
-    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */ /* sombra v.movil */
-
 }
-
+main section article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%; 
+   }  
 
 main section {
     width: 90%;
@@ -158,20 +168,23 @@ header .burger-menu {
 }
 .busqueda{
     display: flex;
-    justify-content: right;
     align-items: center;
 }
-.busqueda input {
-    justify-content: space-between;
-    margin-right: 50px;
-}
 
+.busqueda input {
+    justify-content:space-between;
+}
+.copy-header{
+    max-width: 350px; 
+    text-align: right;
+    margin-left: 150px;
+}
 header nav{
     display: block;
 }
 header ul.menu-top{
     display: inline-block;
-    justify-content:space-around ;
+    justify-content:space-around;
 }
 
 .menu {
@@ -182,30 +195,29 @@ nav.menu li{
     display: inline-flex;
     margin:0 5px;
 }
-
 /* end HEADER */
 
 main section article{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);  /* sombra v.movil */
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+ .productos {
+     display: flex;
+ }
+ main.productos article {
+     flex-wrap: wrap;
+ }
 
+
+ /* DESKTOP */
+@media (min-width: 1200px){
+    /* MAIN */
+    .productos {
+        display: flex;
+    }
+    main section.productos article {
+       justify-content: space-between;
+   }
 }
 
-}
 
 
-
-
-/* root es raiz es universal 
-esto me permite generar variebles para volver
-a utilirla mas adelante
-
-como llamo a una variable; body {
-    var
-}
-
-con aterisco le aplico a todos mis decumentos el mismo estilo
-
-
-
-
-*/
