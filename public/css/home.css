@@ -49,6 +49,7 @@ header {
 
 header .burger-menu {
     background-color: var(--color-celeste);
+    box-sizing: content-box;
     border-radius: 5px;
     color: white;
     text-align: center;
@@ -70,9 +71,9 @@ header nav{
 
 header .busqueda {
     margin-left: 5px;
+    border-style: none;
 }
-
-header p {
+header .copy-header {
     margin-top: 10px;
     margin-top: 10px;
     text-align: center;
@@ -94,9 +95,12 @@ h3.subtitulo{
 }
 
 main section article{
-    margin: 10px;
+    /* margin: 10px; */
     border: 10px solid #ebebeb;
     padding: 15px;
+    max-width: 380px;
+
+
 }
 main section article i{
     font-size: 16px;
@@ -196,17 +200,25 @@ nav.menu li{
     margin:0 5px;
 }
 /* end HEADER */
-
+main {
+    margin: 0 auto;
+}
 main section article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
- .productos {
-     display: flex;
- }
- main.productos article {
-     flex-wrap: wrap;
- }
 
+ .productos article{
+    max-width: 300px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+
+ }
+ .productos article:nth-child(2n){
+     margin-right: 0px;
+ }
+ 
+}
 
  /* DESKTOP */
 @media (min-width: 1200px){
@@ -217,7 +229,5 @@ main section article{
     main section.productos article {
        justify-content: space-between;
    }
+
 }
-
-
-
