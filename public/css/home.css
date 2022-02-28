@@ -61,23 +61,30 @@ header .burger-menu {
 
 header img#logo {
     width: 130px;
-    margin: 0 20px;
-    
+    margin: 0px; 
 }
 
 header nav{
     display: none;
 }
 
-header .busqueda {
+ header .busqueda {
     margin-left: 5px;
     border-style: none;
+    display:flex;
+    justify-content: space-around;
 }
-header .copy-header {
-    margin-top: 10px;
-    margin-top: 10px;
+ 
+.container {
+    display:flex;
+    align-items: center;
+}
+
+.parrafo{
     text-align: center;
 }
+
+
 header nav .menu-top {
     margin-bottom: 20px;
 }
@@ -158,7 +165,7 @@ footer article i {
 footer p#copyright {
     font-size: var(--paragraph);
     color: var(--color-grisOscuro);
-    text-align: left;
+    text-align: center;
     padding-left: 10px;
 }
 /* end FOOTER */
@@ -170,21 +177,18 @@ footer p#copyright {
 header .burger-menu {
    display: none;
 }
-.busqueda{
+.tablet {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+.container {
+    margin-left: 100px;
 }
 
-.busqueda input {
-    justify-content:space-between;
-}
-.copy-header{
-    max-width: 350px; 
-    text-align: right;
-    margin-left: 150px;
-}
 header nav{
     display: block;
+    margin: 10px;
 }
 header ul.menu-top{
     display: inline-block;
@@ -217,11 +221,20 @@ main section article{
  .productos article:nth-child(2n){
      margin-right: 0px;
  }
- 
-}
 
  /* DESKTOP */
 @media (min-width: 1200px){
+    /* HEADER */
+    .container{
+        justify-content: space-around
+
+    }
+/* ACOMODAR HEADER DE COMPU */
+
+
+
+
+
     /* MAIN */
     .productos {
         display: flex;
