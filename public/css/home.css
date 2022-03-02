@@ -29,11 +29,13 @@ a {
 
 body { /* o body o html */
     font-family: var(--font-roboto);
+    background-color: var(--color-grisClaro);
 }
 
 li {
     list-style: none;
 }
+
 /* FIN ESTILOS GENERALES */ 
 
 /* ++++++++ */
@@ -74,6 +76,9 @@ header nav{
     display:flex;
     justify-content: space-around;
 }
+.input {
+    width: 90%;
+}
  
 .container {
     display:flex;
@@ -92,6 +97,7 @@ header nav .menu-top {
 /* FIN HEADER */
 
 /* MAIN */
+/* banner */
 main div img {
     width: 100%;
 }
@@ -101,15 +107,25 @@ h3.subtitulo{
     padding: 10px;
 }
 
-main section article{
-    /* margin: 10px; */
-    border: 10px solid #ebebeb;
-    padding: 15px;
-    max-width: 380px;
-
-
+section article img {
+    border-bottom: solid 1px var(--color-grisClaro);
 }
-main section article i{
+
+main section article{
+    border: 10px solid rgba(221, 215, 221, 0.733);
+    max-width: 380px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    padding: 0px 0px 15px 10px;
+    background-color: white;
+}
+
+main section article div {
+    display: flex;
+    align-items: center;
+}
+
+main section article div i{
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -117,7 +133,9 @@ main section article i{
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%; 
-   }  
+    color: var(--color-verde);
+    margin: -20px 10px 0 auto;
+}  
 
 main section {
     width: 90%;
@@ -130,6 +148,7 @@ main section {
 
 #porcentaje {
     color: var(--color-verde);
+    padding-left: 10px;
 }
 
 /* ++++++++++ */
@@ -140,6 +159,7 @@ footer {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 10px;
+    background-color: var(--color-grisClaro);
 }
 
 footer article {
@@ -221,26 +241,29 @@ main section article{
  .productos article:nth-child(2n){
      margin-right: 0px;
  }
+}
 
  /* DESKTOP */
 @media (min-width: 1200px){
-    /* HEADER */
-    .container{
-        justify-content: space-around
+/* HEADER */
 
-    }
-/* ACOMODAR HEADER DE COMPU */
+header img#logo {
+    width: 300px;
+    margin: 0px; 
+}
 
+.container {
+     margin:20px;
+     padding: 0 50px 0 50px;
+}
 
-
-
-
-    /* MAIN */
-    .productos {
-        display: flex;
-    }
-    main section.productos article {
-       justify-content: space-between;
-   }
+/* MAIN */
+.productos {
+    display: flex;
+}
+main section.productos article {
+    justify-content: space-between;
+}
 
 }
+
