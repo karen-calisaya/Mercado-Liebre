@@ -93,12 +93,22 @@ header nav{
 .container input:focus{
     outline: none;
 }
-.container button{
+
+.busqueda button i {
+    color: var(--color-grisOscuro);
+    margin-left: 10px;
+}
+.busqueda button {
+    border: none;
+    background-color: white;
+}
+/* .container button {
     background-color: white;
     border: none;
-    color: var(--color-grisOscuro)
+    color: var(--color-grisOscuro);
+    right: 30px;
 }
-
+ */
 .parrafo{
     margin-top: 3px;
     text-align: center;
