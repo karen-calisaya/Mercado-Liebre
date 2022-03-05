@@ -40,12 +40,19 @@ body.forms section.register-container{
     border-radius: 10px;
     padding: 1rem;
     background: var(--color-grisClaro);
-    width: 100%; /* que se agrende el formulario */
+    width: 50%; /* que se agrende el formulario */
 }
 
-body.forms f{
+body.forms form div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+body.forms form div.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
 }
