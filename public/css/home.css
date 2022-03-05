@@ -265,7 +265,12 @@ main section article{
     display: inline-block;
     margin: 10px auto;
  }
+/* FOOTER */
 
+footer div{
+    display: flex;
+    justify-content: space-around;
+ }
 }
 
  /* DESKTOP */
