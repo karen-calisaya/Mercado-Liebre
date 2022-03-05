@@ -102,13 +102,7 @@ header nav{
     border: none;
     background-color: white;
 }
-/* .container button {
-    background-color: white;
-    border: none;
-    color: var(--color-grisOscuro);
-    right: 30px;
-}
- */
+
 .parrafo{
     margin-top: 3px;
     text-align: center;
@@ -142,11 +136,11 @@ main section.productos{
 
 main section article{
     border: 10px solid rgba(221, 215, 221, 0.733);
-    max-width: 100%;   /* cambios */
-    margin-bottom: 10px;
+    max-width: 380px;
     line-height: 22px;
     padding: 0px 0px 15px 10px;
     background-color: white;
+    margin: 8px auto;
 }
 
 main section article div {
