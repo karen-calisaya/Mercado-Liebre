@@ -250,25 +250,22 @@ nav.menu li{
     margin:0 5px;
 }
 /* end HEADER */
-main {
+
+/* main {
     margin: 0 auto;
-}
+}  */
 main section article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    flex-wrap:nowrap;
-    width: 40%;
+    flex-wrap:wrap;
+    /* width: 40%; */
 }
 
  .productos article{
-    max-width: 300px;
+    max-width: 300px;     /* importante no volver a modificar */
     display: inline-block;
-    margin-left: 10px;
-    margin-top: 20px;
+    margin: 10px auto;
+ }
 
- }
- .productos article:nth-child(2n){
-     margin-right: 0px;
- }
 }
 
  /* DESKTOP */
@@ -286,19 +283,17 @@ header img#logo {
 }
 
 main section article{
-    flex-wrap:nowrap;
-    width: 20%;
+  /*   flex-wrap:wrap; */
+    width: 23%; 
 }
 
  .productos article{
-    max-width: 300px;
+    max-width: 400px;
     display: inline-block;
     margin-left: 10px;
     margin-top: 20px;
     justify-content: center;
 
  }
- .productos article:nth-child(2n){
-     margin-right: 0px;
- }
+
 }
