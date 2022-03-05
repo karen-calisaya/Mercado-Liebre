@@ -1,0 +1,51 @@
+:root {
+    /* COLORES */
+    --color-celeste : #1259c3;
+    --color-grisOscuro : #666;
+    --color-grisClaro : #ebebeb;
+    /* FUENTES */
+    --font-roboto : 'Roboto', sans-serif;
+    /* Tamaños de fuentes */
+    --paragraph : 12px;
+    --title : 24px;
+    --prices : 18px;
+    --discounts-descriptions : 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.forms {
+    font-family: var(--paragraph);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+body.forms a {
+    color: darkblue;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+body.forms h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+body.forms section.register-container{
+    border-radius: 10px;
+    padding: 1rem;
+    background: var(--color-grisClaro);
+    width: 100%; /* que se agrende el formulario */
+}
+
+body.forms f{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
