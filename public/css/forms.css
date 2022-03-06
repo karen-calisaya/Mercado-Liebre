@@ -1,10 +1,12 @@
+@import url(register.css);
+@import url(login.css);
+
+
 :root {
     /* COLORES */
     --color-celeste : #1259c3;
     --color-grisOscuro : #666;
     --color-grisClaro : #ebebeb;
-    /* FUENTES */
-    --font-roboto : 'Roboto', sans-serif;
     /* Tamaños de fuentes */
     --paragraph : 12px;
     --title : 24px;
@@ -16,6 +18,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 body.forms {
@@ -40,7 +44,7 @@ body.forms section.register-container{
     border-radius: 10px;
     padding: 1rem;
     background: var(--color-grisClaro);
-    width: 50%; /* que se agrende el formulario */
+    width: 100%; /* que se agrende el formulario */
 }
 
 body.forms form div{
@@ -55,4 +59,73 @@ body.forms form div.input-container{
     flex-direction: column;
     width: 100%;
     margin-bottom: 1rem;
+}
+
+body.forms form div.input-container-perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+body.forms form span.error-message { /* displya: none */
+    color: tomato;
+    font-size: 10px;
+    margin: 0 auto;
+}
+form span.error-message{
+    text-align: center;
+ }
+
+body.forms form input.input-style,
+body.forms form input.input-select {
+    border: none;
+    border-radius: 1rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0.2rem;
+    background-color: white;
+}
+
+input:focus{
+    outline:none;
+}
+
+body.forms form input::placeholder { 
+    color: lightgray;
+}
+body.forms form label {
+    font-size: 0.8rem;
+}
+
+/* ESTILO DE LOS BOTONES */
+button.btn {
+    border: none;
+    border-radius: 1rem;
+    height: 2.5rem;
+    text-transform: uppercase;
+    width: 8rem;
+    cursor: pointer;
+    margin: 0.2rem auto 0;
+}
+
+.btn-reset {   /* boton borrar */
+    background:  var(--color-celeste);
+    color: #3d3c3c;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.btn-reset:hover {  /* hover de boton borrar */
+    color: rgb(243, 243, 243);
+}
+
+.btn-edit { 
+    background: var(--color-celeste);
+    color: #3d3c3c;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.btn-edit:hover {
+    color: rgb(243, 243, 243);
+
 }

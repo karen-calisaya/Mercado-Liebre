@@ -1,0 +1,15 @@
+section.login .input_check-container {
+    margin-bottom: 1rem;
+    /* display: flex;
+    width: 100%;
+    justify-content: center;  */
+}
+/* 
+section.login .input_check-container label {
+    position: relative;
+    top: -1px;
+} */
+
+section.login{ 
+    max-width: 375px; /* para el maximo de la tarjeta de registro */
+}
