@@ -43,10 +43,14 @@ li {
 /* +++++++ */
 
 header {
+    width: 100%;
     background-color: var(--color-amarillo);
     font-size: var(--paragraph);
     padding-bottom: 5px;
     padding-top: 15px;
+    position: fixed; /* agrege position fixed */
+    top: 0px; 
+    z-index: 100;
 }
 
 header .burger-menu {
@@ -119,6 +123,7 @@ header nav .menu-top {
 /* banner */
 main div img {
     width: 100%;
+    margin-top: 115px;
 }
 h3.subtitulo{ 
     text-align: left;
@@ -219,7 +224,9 @@ footer p#copyright {
 /* MEDIA QUERIES */
 /* version tablet */
 @media(min-width: 768px){
-
+header {
+     width: 100%;
+}
 header .burger-menu {
    display: none;
 }
@@ -251,9 +258,12 @@ nav.menu li{
 }
 /* end HEADER */
 
-/* main {
-    margin: 0 auto;
-}  */
+/* MAIN */
+main div img {
+    margin-top: 85px;
+}
+h3
+
 main section article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     flex-wrap:wrap;
