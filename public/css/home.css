@@ -167,6 +167,17 @@ main section article div i{
     top: -20px;
     right:20px;
 }  
+ 
+main article strong {
+    color: white;
+    opacity: 7;
+    transition: all 450ms;
+}
+main article strong:hover{
+    color: black;
+    /* display:block; */
+}
+
 
 main section {
     width: 90%;
