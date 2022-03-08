@@ -148,6 +148,7 @@ main section article{
     margin: 8px auto;
 }
 
+
 main section article div {
     display: flex;
     align-items: center;
@@ -253,10 +254,6 @@ header .burger-menu {
 header nav{
     display: block;
     margin: 10px;
-}
-header ul.menu-top{
-    display: inline-block;
-    justify-content:space-around;
 }
 
 .menu {
