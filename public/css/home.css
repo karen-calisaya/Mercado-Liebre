@@ -148,6 +148,10 @@ main section article{
     margin: 8px auto;
 }
 
+main section article:hover{
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.39);
+}
+
 
 main section article div {
     display: flex;
@@ -167,7 +171,12 @@ main section article div i{
     position: absolute;
     top: -20px;
     right:20px;
+    transition: all 0.05s ease-in;
 }  
+
+main section article div i:hover{
+    transform: rotate(-90deg);
+}
  
 main article strong {
     color: white;
@@ -223,6 +232,11 @@ footer article i {
     color: var(--color-celeste);
     font-size: 30px;
     margin-bottom: 20px;
+    transition: all 0.5s ease-in;
+}
+
+footer article i:hover{
+    color: grey;  
 }
 
 footer p#copyright {

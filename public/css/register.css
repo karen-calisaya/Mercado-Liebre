@@ -1,4 +1,7 @@
- section.register .input_check-container {
+@import url(home.css);
+
+
+section.register .input_check-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
