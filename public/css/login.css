@@ -6,15 +6,12 @@ section.login .input_check-container {
 
 section.login{ 
     max-width: 375px; /* para el maximo de la tarjeta de registro */
+    border: 1px solid black;
+    margin: 200px auto 90px auto;
 }
 
 section.login button.btn-submit:hover{
     background-color:  #0022AA;
     color: white;
-}
-
-body.login footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    
 }

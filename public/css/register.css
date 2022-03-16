@@ -9,6 +9,8 @@ section.register .input_check-container {
 
 section.register {
     max-width: 375px; 
+    border: 1px solid black;
+    margin: 200px auto 0px auto;
 } 
 
 
