@@ -7,3 +7,6 @@
 #### Versión uno de la práctica: ➡️➡️ <https://github.com/karen-calisaya/websiteStructureML>
 #### Versión dos de la práctica: ➡️➡️ <https://github.com/karen-calisaya/addStylesML>
 #### Aquí una pequeña visualización:
+
+https://user-images.githubusercontent.com/98064470/189007744-bd270173-e2c1-4f9f-ae8a-0884cce8d098.mp4
+
